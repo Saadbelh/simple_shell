@@ -9,7 +9,7 @@
 char *_strdup(const char *str)
 {
 	char *ptr;
-	int i, lan = 0;
+	int i, len = 0;
 
 	if (str == NULL)
 		return (NULL);
@@ -43,7 +43,7 @@ int _strcmp(char *s1, char *s2)
 		if (*s1 != *s2)
 			break;
 		s2++;
-		S1++;
+		s1++;
 		cmp = (int)*s1 - (int)*s2;
 	}
 	return (cmp);
