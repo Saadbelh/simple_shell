@@ -2,12 +2,12 @@
 /**
  * main - Simple shell main function
  * @ac: Count of arguments
- * @av: Arguments
+ * @argv: Arguments
  * Return: 0 Always (success).
  */
 int main(int ac, char **argv)
 {
-	char *line = NULL, **command=NULL;
+	char *line = NULL, **command = NULL;
 	int status = 0;
 	(void) ac;
 
@@ -20,7 +20,6 @@ int main(int ac, char **argv)
 				write(STDOUT_FILENO, "\n", 1);
 			return (status);
 		}
-		
 		command = tokenizer(line);
 		if (!command)
 			continue;
