@@ -72,7 +72,7 @@ void exit_shell(char **command, char **argv, int *status, int idx)
 		}
 	}
 	freearray2D(command);
-	exit(exit_vlue);
+	exit(exit_value);
 }
 
 /**
