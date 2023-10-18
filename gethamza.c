@@ -15,7 +15,7 @@ char *_getpath(char *command)
 	{
 		if (command[i] == '/')
 		{
-			if (stat(command, &st) ==)
+			if (stat(command, &st) == 0)
 				return (_strdup(command));
 
 			return (NULL);
