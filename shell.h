@@ -35,5 +35,7 @@ char *_strcpy(char *dest, char *src);
 
 void freearray2D(char **array);
 void print_error(char *name, char *cmd, int idx);
+char *_itoa(int n);
+void reverse_string(char *str, int len);
 
 #endif
