@@ -9,7 +9,7 @@
 int _execute(char **command, char **argv, int idx)
 {
 	char *full_cmd;
-	pid_t cild;
+	pid_t child;
 	int status;
 
 	full_cmd = _getpath(command[0]);
@@ -25,7 +25,7 @@ int _execute(char **command, char **argv, int idx)
 	{
 		if (execve(full_cmd, command, environ) == -1)
 		{
-			free(full_cmd, full_cmd = NULL;
+			free(full_cmd), full_cmd = NULL;
 			freearray2D(command);
 		}
 	}
