@@ -40,6 +40,6 @@ void reverse_string(char *str, int len);
 
 void are_builtin(char *command);
 void handle_builtin(char **command, char **argv, int *status, int idx);
-void exit_shell(char **command, char **argv, int *status, int idx);
+void exit_shell(char **command, int *status);
 void print_env(char ** command, int *status);
 #endif
