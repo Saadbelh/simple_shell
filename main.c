@@ -24,9 +24,7 @@ int main(int ac, char **argv)
 		command = tokenizer(line);
 		if (!command)
 			continue;
-		if (is_builtin(command[0]))
-			handle_builtin(command, argv, &status, idx);
-		else
+
 			status = _execute(command, argv, idx);
 	}
 }
