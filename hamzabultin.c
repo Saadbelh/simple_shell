@@ -25,7 +25,7 @@ void handle_builtin(char **command, char **argv, int *status, int idx)
  *
  * Return: yigysydtg
  */
-int are_builtin(char *command)
+int is_builtin(char *command)
 {
 	char *builtins[] = {"exit", "env", "setenv", "cd", NULL};
 	int i;
